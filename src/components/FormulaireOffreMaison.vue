@@ -18,11 +18,23 @@
         </div>
         <div class="p-2'">
     <!-- On passe la "ref" à FormKit -->
-            <FormKit type="form" v-model="maison" >
-            <FormKit name="nom" label="nom" />
-            <FormKit name="price" label="prix" type="number"/>
-            <FormKit name="favori" label="mettre en valeur"
-            type="checkbox" />
+            <FormKit type="form" v-model="maison" 
+            :config="{
+                classes: {
+                    input: 'p-1 rounded border-gray-300 shadow-sm border',
+                    label: 'text-gray-600',},
+                }"
+                :submit-attrs="{ classes: { input: 'bg-red-300 p-1 rounded' }                      
+        }">
+
+            <FormKit name="nom" label="Nom de l'annonce" />
+            <FormKit name="adress" label="Adresse du bien"/>
+            <FormKit name="price" label="Tarif par mois" type="number"/>
+            <FormKit name="nbbed" label="Nombre de lits" type="number"/>
+            <FormKit name="nbsdb" label="Nombre de salles de bains" type="number"/>
+            <FormKit name="superficie" label="Superficie en m²" type="number"/>
+            <FormKit name="favoris" label="mettre en valeur"
+            type="checkbox" wrapper-class="flex gap-3" />
             </FormKit>
         </div>
     </div>

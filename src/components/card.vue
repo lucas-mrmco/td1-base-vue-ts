@@ -5,7 +5,7 @@
       class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7"
     >
       <h3 class="text-2xl text-gray-900">{{ nom }}</h3>
-      <address class="not-italic text-gray-500">{{ txt }}</address>
+      <address class="not-italic text-gray-500">{{ adress }}</address>
       <div class="order-first flex items-center">
         <div class="text-2xl text-indigo-500">
           ${{ price.toLocaleString("en-US") }}
@@ -14,9 +14,9 @@
       </div>
       <hr class="my-2 border-t-2 border-indigo-100" />
       <div class="flex justify-between text-sm">
-        <div><bed class="inline-block align-top" /> 4 Beds</div>
-        <div><bath class="inline-block align-top" /> {{ nbbath }}</div>
-        <div><size class="inline-block align-top" /> {{ nbsize }}</div>
+        <div><bed class="inline-block align-top" /> {{ nbbed }} lits</div>
+        <div><bath class="inline-block align-top" /> {{ nbsdb }} salles de bains</div>
+        <div><size class="inline-block align-top" /> {{ superficie }} m²</div>
       </div>
       <div
         class="
@@ -56,20 +56,24 @@ defineProps ({
       type: String,
       default: "Beverly Springfield",
     },
-    txt: {
+    adress: {
       type: String,
       default: "2821 Lake Sevilla, Palm Harbor, TX",
     },
     img: {
       type: String,
     },
-    nbbath: {
+    nbbed: {
       type: String,
-      default: "2 Bathrooms",
+      default: "2",
     },
-    nbsize: {
+    nbsdb: {
       type: String,
-      default: "6x7.5 m²",
+      default: "2",
+    },
+    superficie: {
+      type: String,
+      default: "100",
     },
 });
 </script>

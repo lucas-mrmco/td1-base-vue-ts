@@ -1,28 +1,29 @@
 [
     {
-        "nom": "Test avec JSON",
-        "price": 34,
-        "favoris": true,
-        "txt": "produit de test",
-        "nbbath": 2,
-        "nbsize": "test m²",
+        "nom": "Test1 avec JSON",
+        "price": 190,
+        "favoris": false,
+        "adress": "produit de test",
+        "nbbed": 2,
+        "nbsdb": 2,
+        "superficie": "300",
         "img": "/public/maison1.png"
     },
     {
-        "nom": "Deuxième test",
-        "price": 27,
-        "favoris": false,
-        "txt": "2ème produit de test",
-        "nbbath": 2,
-        "nbsize": "test*2 m²",
+        "nom": "test2",
+        "price": 451,
+        "favoris": true,
+        "adress": "2ème produit de test",
+        "nbsdb": 2,
+        "superficie": "800",
         "img": "/public/maison2.png"
     },
     {
         "nom": "Test final",
-        "price": 86,
-        "txt": "Dernier produit de test",
-        "nbbath": 1,
-        "nbsize": "test m²",
+        "price": 784,
+        "adress": "Dernier produit de test",
+        "nbsdb": 1,
+        "superficie": "200",
         "img": "/public/maison3.png"
     }
 ]
