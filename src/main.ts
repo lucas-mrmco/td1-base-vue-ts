@@ -4,6 +4,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import routesFromPages from "~pages";
 import { plugin, defaultConfig } from "@formkit/vue";
 import "./index.css";
+console.log({ routesFromPages });
+
 
 const router = createRouter({
   history: createWebHistory(),
