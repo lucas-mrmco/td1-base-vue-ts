@@ -11,6 +11,6 @@
     
 import Card from "../components/card.vue";
 
-  const maisons = [{nom:"test", price:60, favoris:true, txt:"produit de test", nbsdb:2, nbsize:"test m²", img:"/public/maison1.png"}, {nom:"test2", price:7, favoris:false, txt:"2ème produit de test", nbbath:2, nbsize:"test*2 m²", img:"/public/maison2.png"}, {nom:"Dernier test", price:43, txt:"Dernier produit de test", nbbath:1, nbsize:"test m²", img:"/public/maison3.png"}]
+  const maisons = [{nom:"test", price:60, favoris:true, adress:"produit de test", nbsdb:2, superficie:"test m²", img:"/public/maison1.png"}, {nom:"test2", price:7, favoris:false, txt:"2ème produit de test", nbsdb:2, superficie:"test*2 m²", img:"/public/maison2.png"}, {nom:"Dernier test", price:43, adress:"Dernier produit de test", nbsdb:1, superficie:"test m²", img:"/public/maison3.png"}]
 //   import maisons from "../assets/maisons.json";
 </script>
