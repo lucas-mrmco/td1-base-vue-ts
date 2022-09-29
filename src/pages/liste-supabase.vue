@@ -11,7 +11,12 @@ let { data: maisons, error } = await supabase
   .from('Maison')
   .select('*')
 
+console.log("Maison:", maisons);
 
+// const user = ref(supabase.auth.user());
+// supabase.auth.onAuthStateChange(() => {
+//     user.value = supabase.auth.user()
+// })
 </script>
 
 <template>
@@ -23,5 +28,5 @@ let { data: maisons, error } = await supabase
   </div>
     
   
-  {{ maisons }}
+  <!-- {{ maisons }} -->
 </template>
