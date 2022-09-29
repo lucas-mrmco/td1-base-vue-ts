@@ -52,7 +52,7 @@
         }">
 
             <FormKit name="nomMaison" label="Nom de l'annonce" />
-            <FormKit name="adress" label="Adresse du bien"/>
+            <FormKit name="adresse" label="adressee du bien"/>
             <FormKit name="price" label="Tarif par mois" type="number"/>
             <FormKit name="nbbed" label="Nombre de lits" type="number"/>
             <FormKit name="nbsdb" label="Nombre de salles de bains" type="number"/>

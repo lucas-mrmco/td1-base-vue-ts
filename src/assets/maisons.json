@@ -3,7 +3,7 @@
         "nomMaisonMaison": "Test avec JSON",
         "price": 190,
         "favoris": true,
-        "adress": "produit de test",
+        "adresse": "produit de test",
         "nbbed": 2,
         "nbsdb": 2,
         "superficie": "300",
@@ -13,7 +13,7 @@
         "nomMaisonMaison": "Deuxième test",
         "price": 451,
         "favoris": false,
-        "adress": "2ème produit de test",
+        "adresse": "2ème produit de test",
         "nbsdb": 2,
         "superficie": "800",
         "img": "/public/maison2.png"
@@ -21,7 +21,7 @@
     {
         "nomMaison": "Test final",
         "price": 784,
-        "adress": "Dernier produit de test",
+        "adresse": "Dernier produit de test",
         "nbsdb": 1,
         "superficie": "200",
         "img": "/public/maison3.png"
