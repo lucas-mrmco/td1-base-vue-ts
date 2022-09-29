@@ -1,6 +1,6 @@
 [
     {
-        "nom": "Test1 avec JSON",
+        "nomMaison": "Test1 avec JSON",
         "price": 190,
         "favoris": false,
         "adress": "produit de test",
@@ -10,7 +10,7 @@
         "img": "/public/maison1.png"
     },
     {
-        "nom": "test2",
+        "nomMaison": "test2",
         "price": 451,
         "favoris": true,
         "adress": "2ème produit de test",
@@ -19,7 +19,7 @@
         "img": "/public/maison2.png"
     },
     {
-        "nom": "Test final",
+        "nomMaison": "Test final",
         "price": 784,
         "adress": "Dernier produit de test",
         "nbsdb": 1,
