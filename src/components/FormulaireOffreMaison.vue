@@ -51,7 +51,7 @@
                 :submit-attrs="{ classes: { input: 'bg-red-300 p-1 rounded' }                      
         }">
 
-            <FormKit name="nom" label="Nom de l'annonce" />
+            <FormKit name="nomMaison" label="Nom de l'annonce" />
             <FormKit name="adress" label="Adresse du bien"/>
             <FormKit name="price" label="Tarif par mois" type="number"/>
             <FormKit name="nbbed" label="Nombre de lits" type="number"/>

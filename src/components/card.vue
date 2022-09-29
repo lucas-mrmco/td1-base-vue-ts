@@ -4,7 +4,7 @@
     <figcaption
       class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7"
     >
-      <h3 class="text-2xl text-gray-900">{{ nom }}</h3>
+      <h3 class="text-2xl text-gray-900">{{ nomMaison }}</h3>
       <address class="not-italic text-gray-500">{{ adress }}</address>
       <div class="order-first flex items-center">
         <div class="text-2xl text-indigo-500">
@@ -52,7 +52,7 @@ defineProps ({
       type: Boolean,
       default: false,
     },
-    nom: {
+    nomMaison: {
       type: String,
       default: "Beverly Springfield",
     },
