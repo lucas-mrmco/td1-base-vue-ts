@@ -1,12 +1,36 @@
 <script setup lang="ts">
     import { ref } from "@vue/reactivity" ;
     import Card from "./card.vue";
+    import { supabase } from '@/supabase';
+    import { useRouter } from "vue-router";
     
    
     //On fait une variable réactive qui réference les donnée
     // ATTENTIONfaire une Ref pas une Reactive car
     // c'est l'objet qui doit être réactif, pas ses props
+    const router = useRouter();
     const maison = ref({});
+    
+    const props = defineProps(["id"]);
+    if (props.id) {
+        // On charge les données de la maison
+        let { data, error } = await supabase
+            .from("Maison")
+            .select("*")
+            .eq("id", props.id);
+        if (error) console.log("n'a pas pu charger le table Maison :", error);
+        else maison.value = (data as any[])[0];
+    }
+    //, favoris: true
+    async function upsertMaison(dataForm, node) {
+        const { data, error } = await supabase.from("Maison").upsert(dataForm);
+        if (error || !data) node.setErrors([error?.message])
+        else {
+            node.setErrors([]);
+            router.push({ name: "edit-id", params: { id: data[0].id } });
+        }
+    }
+
 </script>
 
 <template>
@@ -18,7 +42,7 @@
         </div>
         <div class="p-2'">
     <!-- On passe la "ref" à FormKit -->
-            <FormKit type="form" v-model="maison" 
+            <FormKit @submit="upsertMaison" type="form" v-model="maison" 
             :config="{
                 classes: {
                     input: 'p-1 rounded border-gray-300 shadow-sm border',
