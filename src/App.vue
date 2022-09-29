@@ -41,6 +41,9 @@
           <h2>Se connecter</h2>
         </router-link>
       </li>
+      <router-link class="text-red-600 underline" to="/edit/id">
+            <h2>Page ID</h2>
+        </router-link>
     </ul>
   </nav>
 
