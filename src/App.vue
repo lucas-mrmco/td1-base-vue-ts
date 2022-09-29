@@ -1,10 +1,18 @@
 <template>
   <nav>
-    <h4>Lucas Moramarco MMI2 A2</h4>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
+    <h4 class="text-center p-4 font-semibold text-teal-800">Lucas Moramarco MMI2 A2</h4>
+
+    <div class=" lg:hidden flex items-center">
+      <button v-on:click="menuNav = !menuNav " class=" py-6 px-3 ">
+        <Bars3Icon class="h-10 w-10 text-teal-800" :class="{hidden: !menuNav}" />
+      </button>
+    </div>
+
+  <!-- Menu visible pour les formats allant de xs à lg  -->
+  <div class="flex lg:hidden bg-teal-200" :class="{hidden: menuNav }">
+      <button v-if="!menuNav" v-on:click="menuNav = !menuNav" class=" py-6 px-3 ">
+        <XMarkIcon class="h-10 w-10 text-teal-800" />
+      </button>
     <ul>
       <li>
         <router-link class="text-red-600 underline" to="/">
@@ -45,6 +53,51 @@
             <h2>Page ID</h2>
         </router-link>
     </ul>
+  </div>
+
+  <!-- Menu sans îcones pour les formats >lg -->
+  <div class="hidden lg:flex justify-center bg-teal-200">
+    <ul>
+      <li>
+        <router-link class="text-red-600 underline" to="/">
+          Accueil
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/simple">
+          Simple
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/liste">
+          Liste
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/liste-fetch">
+          Liste fetch
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/edit/new">
+          New
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/liste-supabase">
+          Liste supabase
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/login">
+          <h2>Se connecter</h2>
+        </router-link>
+      </li>
+      <router-link class="text-red-600 underline" to="/edit/id">
+            <h2>Page ID</h2>
+        </router-link>
+    </ul>
+  </div>
   </nav>
 
   <!-- Affiche les pages -->
@@ -54,5 +107,7 @@
 </template>
 
 <script setup lang="ts">
-import { Bars3Icon } from "@heroicons/vue/20/solid";
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/20/solid';
+import { ref } from 'vue';
+const menuNav = ref(true);
 </script>
