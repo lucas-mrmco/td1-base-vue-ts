@@ -8,7 +8,7 @@
       <address class="not-italic text-gray-500">{{ adresse }}</address>
       <div class="order-first flex items-center">
         <div class="text-2xl text-indigo-500">
-          ${{ price.toLocaleString("en-US") }}
+          ${{ price?.toLocaleString("en-US") }}
         </div>
         <div class="text-gray-500">/mois</div>
       </div>

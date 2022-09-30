@@ -13,10 +13,6 @@ let { data: maisons, error } = await supabase
 
 console.log("Maison:", maisons);
 
-// const user = ref(supabase.auth.user());
-// supabase.auth.onAuthStateChange(() => {
-//     user.value = supabase.auth.user()
-// })
 </script>
 
 <template>
