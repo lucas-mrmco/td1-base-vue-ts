@@ -12,17 +12,17 @@
     
     <template>
         <section class="flex flex-col">
-            <h3 class="text-2xl">Liste des quartiers</h3>
-            <Disclosure v-for="(listeQuartier, libellecommune) in groupBy(
+            <h3 class="text-2xl">Liste des communes</h3>
+            <Disclosure v-for="(listeCommune, libelle_Quartier) in groupBy(
               data,
-              'libelle_commune'
-            )" :key="libellecommune">
-                <DisclosureButton> {{libellecommune}}</DisclosureButton>
+              'libelle_Quartier'
+            )" :key="libelle_Quartier">
+                <DisclosureButton> {{libelle_Quartier}}</DisclosureButton>
                 <DisclosurePanel>
                     <ul>
-                        <li v-for="quartierObject in listeQuartier" :key="quartierObject.code_Quartier">
+                        <li v-for="communeObject in listeCommune" :key="communeObject.code_Commune">
     
-                            {{ quartierObject.libelle_Quartier }}
+                            {{ communeObject.libelle_commune }}
                         </li>
                     </ul>
                 </DisclosurePanel>

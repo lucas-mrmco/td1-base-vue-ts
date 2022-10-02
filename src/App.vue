@@ -59,6 +59,16 @@
           <h2>New quartier</h2>
         </router-link>
       </li>
+      <li>
+          <router-link class="hover:text-orange-700 underline" to="/commune">
+            <h2>Index Commune</h2>
+          </router-link>
+        </li>
+      <li>
+        <router-link class="hover:text-orange-700 underline" to="/commune/new">
+          <h2>New Commune</h2>
+        </router-link>
+      </li>
       
     </ul>
   </div>
@@ -112,6 +122,17 @@
           <h2>New quartier</h2>
         </router-link>
       </li>
+      <li>
+          <router-link class="hover:text-orange-700 underline" to="/commune">
+            <h2>Index Commune</h2>
+          </router-link>
+        </li>
+      <li>
+        <router-link class="hover:text-orange-700 underline" to="/commune/new">
+          <h2>New Commune</h2>
+        </router-link>
+      </li>
+      
     </ul>
   </div>
   </nav>

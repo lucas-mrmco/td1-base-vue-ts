@@ -1,9 +1,9 @@
 <script setup lang="ts">
     
-import FormulaireQuartier from "@/components/FormulaireQuartier.vue";
+import FormulaireCommune from "../../components/FormulaireCommune.vue";
     </script>
     <template>
       <div class="p-2">
-        <FormulaireQuartier />
+        <FormulaireCommune />
       </div>
     </template>
