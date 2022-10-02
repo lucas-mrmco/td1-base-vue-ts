@@ -75,5 +75,9 @@ defineProps ({
       type: String,
       default: "100",
     },
+    img: {
+        type: String,
+        default: '/public/maison1.png'
+    },
 });
 </script>
