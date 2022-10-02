@@ -13,56 +13,53 @@
       <button v-if="!menuNav" v-on:click="menuNav = !menuNav" class=" py-6 px-3 ">
         <XMarkIcon class="h-10 w-10 text-teal-800" />
       </button>
-    <ul>
+    <ul class="text-teal-900   mx-auto">
       <li>
-        <router-link class="text-red-600 underline" to="/">
+        <router-link class="hover:text-orange-700  underline" to="/">
           Accueil
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/simple">
+        <router-link class="hover:text-orange-700 underline" to="/simple">
           Simple
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/liste">
+        <router-link class="hover:text-orange-700 underline" to="/liste">
           Liste
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/liste-fetch">
+        <router-link class="hover:text-orange-700 underline" to="/liste-fetch">
           Liste fetch
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/edit/new">
+        <router-link class="hover:text-orange-700 underline" to="/edit/new">
           New
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/liste-supabase">
+        <router-link class="hover:text-orange-700 underline" to="/liste-supabase">
           Liste supabase
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/login">
+        <router-link class="hover:text-orange-700 underline" to="/login">
           <h2>Se connecter</h2>
         </router-link>
       </li>
       <li>
-
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/edit/id">
-            <h2>Page ID</h2>
-        </router-link>
-      </li>
-      
-        <li>
-          <router-link class="text-red-600 underline" to="/quartier">
+          <router-link class="hover:text-orange-700 underline" to="/quartier">
             <h2>Index quartier</h2>
           </router-link>
         </li>
+      <li>
+        <router-link class="hover:text-orange-700 underline" to="/quartier/new">
+          <h2>New quartier</h2>
+        </router-link>
+      </li>
+      
     </ul>
   </div>
 
@@ -70,51 +67,51 @@
   <div class="hidden lg:flex justify-center bg-teal-200">
     <ul>
       <li>
-        <router-link class="text-red-600 underline" to="/">
+        <router-link class="hover:text-orange-700 underline" to="/">
           Accueil
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/simple">
+        <router-link class="hover:text-orange-700 underline" to="/simple">
           Simple
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/liste">
+        <router-link class="hover:text-orange-700 underline" to="/liste">
           Liste
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/liste-fetch">
+        <router-link class="hover:text-orange-700 underline" to="/liste-fetch">
           Liste fetch
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/edit/new">
+        <router-link class="hover:text-orange-700 underline" to="/edit/new">
           New
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/liste-supabase">
+        <router-link class="hover:text-orange-700 underline" to="/liste-supabase">
           Liste supabase
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/login">
+        <router-link class="hover:text-orange-700 underline" to="/login">
           <h2>Se connecter</h2>
         </router-link>
       </li>
+      
       <li>
-        <router-link class="text-red-600 underline" to="/edit/id">
-            <h2>Page ID</h2>
+        <router-link class="hover:text-orange-700 underline" to="/quartier">
+          <h2>Index quartier</h2>
         </router-link>
       </li>
-      
-        <li>
-          <router-link class="text-red-600 underline" to="/quartier">
-            <h2>Index quartier</h2>
-          </router-link>
-        </li>
+      <li>
+        <router-link class="hover:text-orange-700 underline" to="/quartier/new">
+          <h2>New quartier</h2>
+        </router-link>
+      </li>
     </ul>
   </div>
   </nav>
